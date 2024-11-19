@@ -1,0 +1,188 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2c2f33;
+  /* Dark background color */
+  color: #fff;
+  /* White text color */
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  background-color: #36393f;
+  /* Dark container background color */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  /* White text color */
+  margin-bottom: 20px;
+}
+
+.navigation {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.details {
+  font-weight: bold;
+  font-size: 16px;
+  color: #72767d;
+  /* Telegram's accent color */
+}
+
+.semester-selection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+  /* Darker border color */
+}
+
+th {
+  background-color: #36393f;
+  /* Dark header background color */
+  color: #fff;
+  /* White text color */
+}
+
+.dash {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #7289da;
+  /* Telegram's accent color */
+  cursor: pointer;
+  color: #fff;
+  /* White text color */
+  transition: background-color 0.3s ease;
+}
+
+.dash:hover {
+  background-color: #677bc4;
+  /* Slightly darker accent color on hover */
+}
+
+.dash::-ms-expand {
+  display: none;
+}
+
+.dash::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  /* White arrow color */
+}
+
+.dash.open::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.dash select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.dash select::-ms-expand {
+  display: none;
+}
+
+.dash select {
+  padding-right: 25px;
+}
+
+input[type="submit"] {
+  background-color: #7289da;
+  /* Telegram's accent color */
+  border: none;
+  color: #fff;
+  /* White text color */
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #677bc4;
+  /* Slightly darker accent color on hover */
+}
+
+.welcome {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  /* White text color */
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.other-text {
+  font-weight: bold;
+  font-size: 16px;
+  color: #72767d;
+  /* Telegram's accent color */
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #7289da;
+  /* Telegram's accent color */
+  box-shadow: 0 0 5px #7289da;
+  /* Lighter box shadow on focus */
+}
+
+.total {
+  text-align: right;
+  width: 100px;
+  /* Adjust the width as needed */
+}
