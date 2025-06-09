@@ -1,5 +1,5 @@
 <?php 
-	$connection = mysqli_connect('localhost', 'root', '' ,'mypro');
+	$connection = mysqli_connect('localhost', 'root', '' ,'SA');
 
 	if(mysqli_connect_errno()){
 		die("error");
